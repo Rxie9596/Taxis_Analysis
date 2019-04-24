@@ -1,8 +1,9 @@
-load('displacement_50_100.mat')
-load('reori_50_100.mat')
+load('displacement_cold.mat')
+load('reori_cold.mat')
 
 displa = displacement;
-reori = reori_50_100;
+reori = reori_cold;
+reori(reori==0)=NaN;
 
 lw=1.5;
 ps=20;

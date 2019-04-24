@@ -4,6 +4,7 @@ load('theta_50_100.mat')
 
 displa = displacement;
 reori = reori_50_100;
+reori(reori==0)=NaN;
 
 lw=1.5;
 ps=20;
