@@ -1,8 +1,8 @@
-load('displacement_cold_50_100.mat')
-load('reori_cold_50_100.mat')
+load('displacement_50_100.mat')
+load('reori_50_100.mat')
 
 displa = displacement;
-reori = reori_cold_50_100;
+reori = reori_50_100;
 
 lw=1.5;
 ps=20;
@@ -10,7 +10,7 @@ fit_datapt_num = 20;
 mean_datapt_num = 20;
 bound = 10;
 
-Inspect_Flag = false;
+Inspect_Flag = true;
 
 trace_length = [];
 trace_theta = [];
