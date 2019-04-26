@@ -1,8 +1,10 @@
-load('displacement_50_100.mat')
-load('reori_50_100.mat')
+groupname='50_100';
+
+load(['displacement_' groupname '.mat'])
+load(['reori_' groupname '.mat'])
 
 displa = displacement;
-reori = reori_50_100;
+reori = eval(['reori_' groupname]);
 reori(reori==0)=NaN;
 
 lw=1.5;

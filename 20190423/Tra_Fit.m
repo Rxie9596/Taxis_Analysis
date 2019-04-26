@@ -1,8 +1,11 @@
-load('displacement_cold.mat')
-load('reori_cold.mat')
+groupname='cold_50_100';
+Inspect_Flag = true;
+
+load(['displacement_' groupname '.mat'])
+load(['reori_' groupname '.mat'])
 
 displa = displacement;
-reori = reori_cold;
+reori = eval(['reori_' groupname]);
 reori(reori==0)=NaN;
 
 lw=1.5;
@@ -11,7 +14,6 @@ fit_datapt_num = 20;
 mean_datapt_num = 20;
 bound = 10;
 
-Inspect_Flag = true;
 
 trace_length = [];
 trace_theta = [];
