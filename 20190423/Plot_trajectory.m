@@ -1,6 +1,5 @@
 load('displacement_50_100.mat')
 load('reori_50_100.mat')
-load('theta_50_100.mat')
 
 displa = displacement;
 reori = reori_50_100;
